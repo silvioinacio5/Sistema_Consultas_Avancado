@@ -319,17 +319,10 @@
                 <!-- End of Topbar -->
                 <!-- Cnteud -->
                 
-                @switch(Route::currentRouteName())
-                    @case('psico')
-                        @includeIf('admin.psico')
-                        @break
-                    @case('dashboard')
-                        @includeIf('admin.dash')
-                        @break
-                    @case('estudantes')
-                        @includeIf('admin.estudantes')
-                        @break
-                @endswitch
+                @includeIf(Route::currentRouteName() == 'psico' ? 'admin.psico' : null)
+                @includeIf(Route::currentRouteName() == 'dashboard' ? 'admin.dash' : null)
+                @includeIf(Route::currentRouteName() == 'estudantes' ? 'admin.estudantes' : null)
+
 
 
                 

@@ -3,7 +3,7 @@
 
                     <!-- Page Heading -->
                     <div style="display: flex; justify-content: flex-start;">
-                        <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+                        <h1 class="h3 mb-2 text-gray-800">Tabela Estudantes</h1>
                         <a href="" class="h3 mb-2 text-gray-800 btn btn-success" style="margin-left: auto;">Add</a>
                       </div>
                                            

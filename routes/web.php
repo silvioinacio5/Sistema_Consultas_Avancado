@@ -13,10 +13,10 @@ Route::get('/dashboard', function () {
 
 Route::get('/estudantes', function () {
     return view('admin.index');
-});
+})->middleware(['auth', 'verified'])->name('estudantes');
 Route::get('/psico', function () {
     return view('admin.index');
-});
+})->middleware(['auth', 'verified'])->name('psico');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
